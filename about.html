@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>关于节目 · NLS频谱健康站</title>
+  <meta name="description" content="《NLS频谱健康站》是一档科普播客。在细胞频率中，预见健康的未来。内容仅供学习交流，不构成医疗建议。">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="about">
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="">
+        <span data-site-name>NLS频谱健康站</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a class="" href="index.html">首页</a>
+        <a class="" href="episodes.html">单集</a>
+        <a class="active" href="about.html">关于</a>
+        <a class="" href="disclaimer.html">免责</a>
+        <a href="rss.xml">RSS</a>
+        <button class="icon-btn" type="button" data-theme-toggle>深色</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap prose">
+      <h1>关于《NLS频谱健康站》</h1>
+      <p data-site-slogan>在细胞频率中，预见健康的未来</p>
+      <p>
+        这是一档基于个人知识库制作的科普播客。主持人小乐（科普者）与小思（学习者）
+        用双人对话的方式，把 NLS / 非线性频谱相关的健康科技知识讲通俗。
+      </p>
+      <div class="callout">
+        <strong>重要声明：</strong>本节目讨论的技术属于补充与替代医学范畴，不是主流医学的诊断工具，
+        不能替代医生的专业诊断和治疗。任何健康决策，请咨询专业医生。
+      </div>
+      <h2>节目立场</h2>
+      <ul>
+        <li>诚实科普：厂商营销数据不采用，证据分级表述</li>
+        <li>辅助而非替代医疗</li>
+        <li>通俗比喻 + 中西医整合视角</li>
+        <li>科普不是真理的终点，是思考的起点</li>
+      </ul>
+      <h2>主持人</h2>
+      <p><strong data-site-author>小乐 &amp; 小思</strong></p>
+      <p>小乐负责讲原理与边界，小思代表听众提问、把关理解门槛。</p>
+      <h2>联系</h2>
+      <p>欢迎来信交流与反馈：<a data-site-email href="mailto:hello@example.com">hello@example.com</a></p>
+      <h2>订阅</h2>
+      <p>
+        你可以把 <a href="rss.xml">RSS 地址</a> 粘贴到支持播客订阅的客户端中。
+        也可以直接在本网页收听全部单集。
+      </p>
+      <h2>关于本站</h2>
+      <p>
+        静态站点，部署于 Cloudflare Pages；音频托管于 Cloudflare R2。
+        支持手机优先浏览、深浅色自适应、跨页迷你播放器与标题关键词搜索。
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="links">
+        <a href="index.html">首页</a>
+        <a href="episodes.html">全部单集</a>
+        <a href="about.html">关于节目</a>
+        <a href="disclaimer.html">免责声明</a>
+        <a href="rss.xml">RSS 订阅</a>
+        <a data-site-email href="mailto:hello@example.com">hello@example.com</a>
+      </div>
+      <div data-site-copyright>© 2026 NLS频谱健康站 · 内容仅供学习交流，不构成医疗建议</div>
+    </div>
+  </footer>
+
+  <div class="mini-player" id="mini-player" aria-label="迷你播放器">
+    <div class="wrap inner">
+      <img data-mp-cover src="assets/logo.svg" alt="">
+      <div class="mp-info">
+        <div class="mp-title" data-mp-title>未播放</div>
+        <div class="mp-sub" data-mp-sub>选择一集开始收听</div>
+      </div>
+      <div class="mp-controls">
+        <button type="button" data-mp-prev aria-label="上一集">‹</button>
+        <button type="button" class="primary" data-mp-play aria-label="播放">播放</button>
+        <button type="button" data-mp-next aria-label="下一集">›</button>
+      </div>
+      <div class="mp-progress" data-mp-bar role="progressbar" aria-label="播放进度">
+        <i data-mp-fill></i>
+      </div>
+      <div class="mp-time" data-mp-time>00:00 / 00:00</div>
+    </div>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

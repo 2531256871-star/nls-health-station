@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="EP02 量子医学基础">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#6ecbff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0b1a2e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="800" fill="#0b1a2e"/>
+  <rect width="800" height="800" fill="url(#glow)"/>
+  <g fill="none" stroke="#6ecbff" stroke-width="3" opacity="0.85">
+    <path d="M300 300 C340 240 460 240 500 300 C460 360 340 360 300 300 Z M400 200 V400"/>
+    <circle cx="400" cy="300" r="8" fill="#6ecbff" stroke="none"/>
+    <circle cx="320" cy="220" r="3" fill="#6ecbff" stroke="none" opacity="0.7"/>
+    <circle cx="480" cy="220" r="3" fill="#6ecbff" stroke="none" opacity="0.7"/>
+    <circle cx="320" cy="380" r="3" fill="#6ecbff" stroke="none" opacity="0.7"/>
+    <circle cx="480" cy="380" r="3" fill="#6ecbff" stroke="none" opacity="0.7"/>
+  </g>
+  <g fill="none" stroke="#6ecbff" stroke-width="1" opacity="0.35">
+    <line x1="320" y1="220" x2="480" y2="220"/>
+    <line x1="320" y1="380" x2="480" y2="380"/>
+    <line x1="320" y1="220" x2="320" y2="380"/>
+    <line x1="480" y1="220" x2="480" y2="380"/>
+    <line x1="320" y1="220" x2="480" y2="380"/>
+    <line x1="480" y1="220" x2="320" y2="380"/>
+  </g>
+  <text x="64" y="100" font-family="ui-sans-serif, system-ui, sans-serif" font-size="42" font-weight="600" fill="#6ecbff" letter-spacing="4">EP.02</text>
+  <text x="64" y="720" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28" fill="#e8eef7" opacity="0.92">量子医学基础</text>
+  <text x="64" y="760" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="#e8eef7" opacity="0.45" letter-spacing="2">NLS频谱健康站</text>
+</svg>

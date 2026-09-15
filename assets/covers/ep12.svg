@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="EP12 季度回顾（收官）">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#f6ad55" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1a1208" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="800" fill="#1a1208"/>
+  <rect width="800" height="800" fill="url(#glow)"/>
+  <g fill="none" stroke="#f6ad55" stroke-width="3" opacity="0.85">
+    <path d="M400 180 L420 240 L480 240 L430 280 L450 340 L400 300 L350 340 L370 280 L320 240 L380 240 Z"/>
+    <circle cx="400" cy="300" r="8" fill="#f6ad55" stroke="none"/>
+    <circle cx="320" cy="220" r="3" fill="#f6ad55" stroke="none" opacity="0.7"/>
+    <circle cx="480" cy="220" r="3" fill="#f6ad55" stroke="none" opacity="0.7"/>
+    <circle cx="320" cy="380" r="3" fill="#f6ad55" stroke="none" opacity="0.7"/>
+    <circle cx="480" cy="380" r="3" fill="#f6ad55" stroke="none" opacity="0.7"/>
+  </g>
+  <g fill="none" stroke="#f6ad55" stroke-width="1" opacity="0.35">
+    <line x1="320" y1="220" x2="480" y2="220"/>
+    <line x1="320" y1="380" x2="480" y2="380"/>
+    <line x1="320" y1="220" x2="320" y2="380"/>
+    <line x1="480" y1="220" x2="480" y2="380"/>
+    <line x1="320" y1="220" x2="480" y2="380"/>
+    <line x1="480" y1="220" x2="320" y2="380"/>
+  </g>
+  <text x="64" y="100" font-family="ui-sans-serif, system-ui, sans-serif" font-size="42" font-weight="600" fill="#f6ad55" letter-spacing="4">EP.12</text>
+  <text x="64" y="720" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28" fill="#e8eef7" opacity="0.92">季度回顾（收官）</text>
+  <text x="64" y="760" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="#e8eef7" opacity="0.45" letter-spacing="2">NLS频谱健康站</text>
+</svg>

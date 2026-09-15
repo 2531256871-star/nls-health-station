@@ -1,0 +1,5 @@
+# 防止把音频和本地缓存提交进网站仓库
+audio/
+*.mp3
+.DS_Store
+node_modules/
