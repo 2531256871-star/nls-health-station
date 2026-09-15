@@ -29,7 +29,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:image href="https://nls-health-station.pages.dev/assets/covers/ep12.svg"/>
-      <enclosure url="https://YOUR_R2_PUBLIC_URL/ep12-audio-20260715.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/ep12-audio-20260715.mp3" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>EP.11 NLS未来趋势展望：这棵树接下来往哪长</title>
@@ -44,7 +44,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:image href="https://nls-health-station.pages.dev/assets/covers/ep11.svg"/>
-      <enclosure url="https://YOUR_R2_PUBLIC_URL/ep11-audio-20260714.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/ep11-audio-20260714.mp3" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>EP.10 NLS技术发展历程：从一个触发传感器到今天（37年）</title>
@@ -59,7 +59,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:image href="https://nls-health-station.pages.dev/assets/covers/ep10.svg"/>
-      <enclosure url="https://YOUR_R2_PUBLIC_URL/ep10-audio-20260713.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/ep10-audio-20260713.mp3" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>EP.09 儿科与特殊人群应用：最脆弱的人，需要最温柔的工具</title>
@@ -74,7 +74,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:image href="https://nls-health-station.pages.dev/assets/covers/ep09.svg"/>
-      <enclosure url="https://YOUR_R2_PUBLIC_URL/ep09-audio-20260710.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/ep09-audio-20260710.mp3" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>EP.08 健康预防与筛查：从「管健康」到「防健康问题」</title>
@@ -89,7 +89,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:image href="https://nls-health-station.pages.dev/assets/covers/ep08.svg"/>
-      <enclosure url="https://YOUR_R2_PUBLIC_URL/ep08-audio-20260709.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/ep08-audio-20260709.mp3" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>EP.07 慢性疾病管理：从「治已病」到「管健康」</title>
@@ -104,7 +104,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:image href="https://nls-health-station.pages.dev/assets/covers/ep07.svg"/>
-      <enclosure url="https://YOUR_R2_PUBLIC_URL/ep07-audio-20260708.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/ep07-audio-20260708.mp3" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>EP.06 NLS 临床应用案例：走进真实诊室</title>
@@ -119,7 +119,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:image href="https://nls-health-station.pages.dev/assets/covers/ep06.svg"/>
-      <enclosure url="https://YOUR_R2_PUBLIC_URL/ep06-audio-20260707.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/ep06-audio-20260707.mp3" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>EP.05 Meta疗法原理：听懂了频率之后，如何「矫正」它</title>
@@ -134,7 +134,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:image href="https://nls-health-station.pages.dev/assets/covers/ep05.svg"/>
-      <enclosure url="https://YOUR_R2_PUBLIC_URL/ep05-audio-20260706.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/ep05-audio-20260706.mp3" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>EP.04 频谱分析技术：如何「听懂」身体的频率</title>
@@ -149,7 +149,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:image href="https://nls-health-station.pages.dev/assets/covers/ep04.svg"/>
-      <enclosure url="https://YOUR_R2_PUBLIC_URL/ep04-audio-20260704.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/ep04-audio-20260704.mp3" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>EP.03 生物场与细胞通信：你的身体里有一个看不见的通信网络</title>
@@ -164,7 +164,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:image href="https://nls-health-station.pages.dev/assets/covers/ep03.svg"/>
-      <enclosure url="https://YOUR_R2_PUBLIC_URL/ep03-audio-20260702.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/ep03-audio-20260702.mp3" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>EP.02 量子医学基础：解开宇宙四种力的统一密码</title>
@@ -179,7 +179,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:image href="https://nls-health-station.pages.dev/assets/covers/ep02.svg"/>
-      <enclosure url="https://YOUR_R2_PUBLIC_URL/ep02-audio-20260610.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/ep02-audio-20260610.mp3" length="0" type="audio/mpeg"/>
     </item>
     <item>
       <title>EP.01 什么是NLS诊断？开启你的健康探索之旅</title>
@@ -194,7 +194,7 @@
       <itunes:season>1</itunes:season>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:image href="https://nls-health-station.pages.dev/assets/covers/ep01.svg"/>
-      <enclosure url="https://YOUR_R2_PUBLIC_URL/ep01-audio-20260609.mp3" length="0" type="audio/mpeg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/ep01-audio-20260609.mp3" length="0" type="audio/mpeg"/>
     </item>
   </channel>
 </rss>
