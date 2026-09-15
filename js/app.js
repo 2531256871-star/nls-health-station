@@ -226,7 +226,7 @@
     if (!p) return;
     p.setSite(data.site);
     p.setCatalog([...(data.episodes || []), ...(data.derivativeEpisodes || [])]);
-    const ep = data.episodes.find((e) => e.id === id);
+    const ep = p.episodes.find((e) => e.id === id);
     if (!ep) return;
     p.show(ep, opts);
   }
