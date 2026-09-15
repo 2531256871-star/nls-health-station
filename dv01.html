@@ -54,7 +54,7 @@
         <h1>DV.01 Metapathia GR Hunter：NLS 系统介绍</h1>
         <p style="margin:0 0 12px;color:var(--muted);font-size:14px">来源：<a href="https://www.youtube.com/watch?v=VrTMIEc4U00" rel="noopener noreferrer" target="_blank">Metapathia GR Hunter (english)</a> · Metatron IPP</p>
         <div class="hero-actions" style="margin-bottom:20px">
-          <button class="btn btn-primary" type="button" data-play-ep="dv01" data-autoplay="1">播放本集</button>
+          <button class="btn btn-primary btn-play" type="button" data-play-ep="dv01" data-autoplay="1" aria-label="播放本集"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5L8 5.5z" fill="currentColor"/></svg><span>播放本集</span></button>
           <a class="btn" href="https://nls-health-station.pages.dev/audio/dv01-metapathia-gr-hunter.mp3" download>下载音频</a>
           <a class="btn btn-ghost" href="derivatives.html">衍生专辑</a>
         </div>
@@ -101,11 +101,11 @@
   <div class="mini-player" id="mini-player" aria-label="迷你播放器">
     <div class="wrap inner">
       <img data-mp-cover src="assets/logo.svg" alt="">
-      <div class="mp-info"><div class="mp-title" data-mp-title>未播放</div><div class="mp-sub" data-mp-sub>选择一集开始收听</div></div>
+      <div class="mp-info"><div class="mp-title" data-mp-title>未播放</div><div class="mp-sub" data-mp-sub>未选择单集</div></div>
       <div class="mp-controls">
-        <button type="button" data-mp-prev aria-label="上一集">‹</button>
-        <button type="button" class="primary" data-mp-play aria-label="播放">播放</button>
-        <button type="button" data-mp-next aria-label="下一集">›</button>
+        <button type="button" class="mp-btn" data-mp-prev aria-label="上一集" title="上一集"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6h2v12H7V6zm3.5 6L18 6v12l-7.5-6z" fill="currentColor"/></svg></button>
+        <button type="button" class="mp-btn mp-btn-primary" data-mp-play aria-label="播放" title="播放"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5L8 5.5z" fill="currentColor"/></svg></button>
+        <button type="button" class="mp-btn" data-mp-next aria-label="下一集" title="下一集"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6h2v12h-2V6zM6 6l7.5 6L6 18V6z" fill="currentColor"/></svg></button>
       </div>
       <div class="mp-progress" data-mp-bar role="progressbar" aria-label="播放进度"><i data-mp-fill></i></div>
       <div class="mp-time" data-mp-time>00:00 / 00:00</div>

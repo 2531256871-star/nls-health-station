@@ -161,8 +161,12 @@
     }
 
     setPlayingUI(on) {
-      this.el.play.textContent = on ? "暂停" : "播放";
+      const ico = on
+        ? '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7V5zm6.5 0H17v14h-3.5V5z" fill="currentColor"/></svg>'
+        : '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5L8 5.5z" fill="currentColor"/></svg>';
+      this.el.play.innerHTML = ico;
       this.el.play.setAttribute("aria-label", on ? "暂停" : "播放");
+      this.el.play.setAttribute("title", on ? "暂停" : "播放");
     }
 
     syncProgress() {
@@ -186,7 +190,7 @@
       const state = loadPlayerState();
       if (!state?.id) return;
       const data = await loadData();
-      const ep = data.episodes.find((e) => e.id === state.id);
+      const ep = [...(data.episodes || []), ...(data.derivativeEpisodes || [])].find((e) => e.id === state.id);
       if (!ep) return;
       this.setSite(data.site);
       this.setCatalog([...(data.episodes || []), ...(data.derivativeEpisodes || [])]);
