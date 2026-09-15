@@ -478,6 +478,102 @@ button, input { font: inherit; color: inherit; }
   text-align: right;
 }
 
+/* Page transition (glass) */
+.page-veil {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.22s ease, visibility 0.22s ease;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  backdrop-filter: blur(10px) saturate(1.05);
+  -webkit-backdrop-filter: blur(10px) saturate(1.05);
+}
+.page-veil.is-on {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+[data-theme="dark"] .page-veil {
+  background: color-mix(in srgb, #0b1220 78%, transparent);
+}
+[data-theme="light"] .page-veil {
+  background: color-mix(in srgb, #f4f1ea 76%, transparent);
+}
+.page-veil-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 28px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg-elev) 88%, transparent);
+  box-shadow: var(--shadow);
+  color: var(--ink-2);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+.page-veil-orb {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-top-color: var(--accent);
+  animation: veil-spin 0.75s linear infinite;
+}
+.page-veil-bar {
+  width: 120px;
+  height: 3px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--bg-soft);
+  position: relative;
+}
+.page-veil-bar::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 40%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  animation: veil-slide 1s ease-in-out infinite;
+}
+@keyframes veil-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes veil-slide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(280%); }
+}
+/* 移动端：降低 blur 成本，遮罩更轻 */
+@media (max-width: 760px) {
+  .page-veil {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  .page-veil-card {
+    padding: 16px 20px;
+  }
+  .page-veil-orb {
+    width: 36px;
+    height: 36px;
+  }
+}
+/* 减少动态：无 blur，仅淡入淡出 */
+@media (prefers-reduced-motion: reduce) {
+  .page-veil {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    transition-duration: 0.12s;
+  }
+  .page-veil-orb { animation: none; border-top-color: var(--accent); }
+  .page-veil-bar::after { animation: none; width: 100%; opacity: 0.5; }
+}
 /* Footer */
 .site-footer {
   margin-top: 48px;

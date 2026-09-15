@@ -432,8 +432,89 @@
     $$("[data-site-author]").forEach((el) => (el.textContent = data.site.author));
   }
 
+  /* Page transition veil */
+  const VEIL_KEY = "nls-veil-pending";
+
+  function prefersReducedMotion() {
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
+  function ensureVeil() {
+    let el = document.getElementById("page-veil");
+    if (el) return el;
+    el = document.createElement("div");
+    el.id = "page-veil";
+    el.className = "page-veil";
+    el.setAttribute("aria-hidden", "true");
+    el.innerHTML =
+      '<div class="page-veil-card">' +
+      '<div class="page-veil-orb" aria-hidden="true"></div>' +
+      '<div class="page-veil-bar" aria-hidden="true"></div>' +
+      '<div>加载中</div>' +
+      "</div>";
+    document.body.appendChild(el);
+    return el;
+  }
+
+  function showVeil() {
+    const el = ensureVeil();
+    el.classList.add("is-on");
+    try { sessionStorage.setItem(VEIL_KEY, "1"); } catch {}
+  }
+
+  function hideVeil() {
+    const el = document.getElementById("page-veil");
+    if (el) el.classList.remove("is-on");
+    try { sessionStorage.removeItem(VEIL_KEY); } catch {}
+  }
+
+  function shouldSkipNav(a) {
+    if (!a || a.target === "_blank" || a.hasAttribute("download")) return true;
+    const href = a.getAttribute("href") || "";
+    if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("http")) return true;
+    if (href.endsWith(".xml") || href.endsWith(".mp3") || href.endsWith(".svg")) return true;
+    // 同页锚点
+    if (href.startsWith("#")) return true;
+    const url = new URL(href, location.href);
+    if (url.pathname === location.pathname && url.search === location.search) {
+      return true;
+    }
+    return false;
+  }
+
+  function initPageTransition() {
+    // 进入本页：若上一页标记了导航，先遮住再淡出，避免闪白
+    let pending = false;
+    try { pending = sessionStorage.getItem(VEIL_KEY) === "1"; } catch {}
+    if (pending || (performance.getEntriesByType && performance.getEntriesByType("navigation")[0]?.type === "reload")) {
+      const el = ensureVeil();
+      el.classList.add("is-on");
+      const hide = () => hideVeil();
+      // 内容可交互后尽快淡出；长页也不拖太久
+      if (document.readyState === "complete") setTimeout(hide, prefersReducedMotion() ? 40 : 120);
+      else window.addEventListener("load", () => setTimeout(hide, prefersReducedMotion() ? 40 : 100), { once: true });
+      // 兜底：最多 2s 强制关掉
+      setTimeout(hide, 2000);
+    }
+
+    document.addEventListener("click", (e) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const a = e.target.closest?.("a");
+      if (!a || shouldSkipNav(a)) return;
+      showVeil();
+      // 兜底：导航卡住时 8s 后放开交互
+      setTimeout(() => hideVeil(), 8000);
+    }, true);
+
+    // bfcache 恢复时关掉遮罩
+    window.addEventListener("pageshow", (ev) => {
+      if (ev.persisted) hideVeil();
+    });
+  }
+
   async function boot() {
     initTheme();
+    initPageTransition();
     ensurePlayer();
     try {
       const data = await loadData();
