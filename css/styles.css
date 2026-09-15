@@ -510,7 +510,7 @@ button, input { font: inherit; color: inherit; }
   perspective: 220px;
 }
 .page-veil .dna-spin {
-  transform-origin: 40px 60px;
+  transform-origin: 48px 66px;
   transform-box: fill-box;
   animation: dna-spin 1.35s linear infinite;
 }

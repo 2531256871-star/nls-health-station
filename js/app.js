@@ -446,31 +446,33 @@
     el.id = "page-veil";
     el.className = "page-veil";
     el.setAttribute("aria-hidden", "true");
-    // 简易双螺旋：无卡片底、无文字，仅 SVG 自转
+    // 平行双螺旋：两条同相位 S 曲线水平错开，横档相连，整体自转
     el.innerHTML =
-      '<svg class="dna" viewBox="0 0 80 120" width="56" height="84" aria-hidden="true">' +
+      '<svg class="dna" viewBox="0 0 96 132" width="64" height="88" aria-hidden="true">' +
       '<g class="dna-spin">' +
-      '<path class="dna-strand" d="M22 6 C58 24 58 42 22 60 C-14 78 -14 96 22 114" />' +
-      '<path class="dna-strand dna-strand-b" d="M58 6 C22 24 22 42 58 60 C94 78 94 96 58 114" />' +
+      // 左链：正弦波
+      '<path class="dna-strand" d="M28 8 C52 22 4 36 28 50 C52 64 4 78 28 92 C52 106 4 120 28 134" />' +
+      // 右链：同形状、右移 32（平行，非镜像）
+      '<path class="dna-strand dna-strand-b" d="M60 8 C84 22 36 36 60 50 C84 64 36 78 60 92 C84 106 36 120 60 134" />' +
       '<g class="dna-rungs">' +
-      '<line x1="24" y1="18" x2="56" y2="18" />' +
-      '<line x1="30" y1="30" x2="50" y2="30" />' +
-      '<line x1="24" y1="42" x2="56" y2="42" />' +
-      '<line x1="24" y1="60" x2="56" y2="60" />' +
-      '<line x1="30" y1="72" x2="50" y2="72" />' +
-      '<line x1="24" y1="84" x2="56" y2="84" />' +
-      '<line x1="30" y1="96" x2="50" y2="96" />' +
-      '<line x1="24" y1="108" x2="56" y2="108" />' +
+      '<line x1="30" y1="18" x2="62" y2="18" />' +
+      '<line x1="22" y1="32" x2="54" y2="32" />' +
+      '<line x1="30" y1="46" x2="62" y2="46" />' +
+      '<line x1="22" y1="60" x2="54" y2="60" />' +
+      '<line x1="30" y1="74" x2="62" y2="74" />' +
+      '<line x1="22" y1="88" x2="54" y2="88" />' +
+      '<line x1="30" y1="102" x2="62" y2="102" />' +
+      '<line x1="22" y1="116" x2="54" y2="116" />' +
       "</g>" +
       '<g class="dna-nodes">' +
-      '<circle cx="22" cy="18" r="2.2"/><circle cx="58" cy="18" r="2.2"/>' +
-      '<circle cx="30" cy="30" r="1.8"/><circle cx="50" cy="30" r="1.8"/>' +
-      '<circle cx="22" cy="42" r="2.2"/><circle cx="58" cy="42" r="2.2"/>' +
-      '<circle cx="22" cy="60" r="2.2"/><circle cx="58" cy="60" r="2.2"/>' +
-      '<circle cx="30" cy="72" r="1.8"/><circle cx="50" cy="72" r="1.8"/>' +
-      '<circle cx="22" cy="84" r="2.2"/><circle cx="58" cy="84" r="2.2"/>' +
-      '<circle cx="30" cy="96" r="1.8"/><circle cx="50" cy="96" r="1.8"/>' +
-      '<circle cx="22" cy="108" r="2.2"/><circle cx="58" cy="108" r="2.2"/>' +
+      '<circle cx="30" cy="18" r="2"/><circle cx="62" cy="18" r="2"/>' +
+      '<circle cx="22" cy="32" r="1.8"/><circle cx="54" cy="32" r="1.8"/>' +
+      '<circle cx="30" cy="46" r="2"/><circle cx="62" cy="46" r="2"/>' +
+      '<circle cx="22" cy="60" r="1.8"/><circle cx="54" cy="60" r="1.8"/>' +
+      '<circle cx="30" cy="74" r="2"/><circle cx="62" cy="74" r="2"/>' +
+      '<circle cx="22" cy="88" r="1.8"/><circle cx="54" cy="88" r="1.8"/>' +
+      '<circle cx="30" cy="102" r="2"/><circle cx="62" cy="102" r="2"/>' +
+      '<circle cx="22" cy="116" r="1.8"/><circle cx="54" cy="116" r="1.8"/>' +
       "</g>" +
       "</g>" +
       "</svg>";
