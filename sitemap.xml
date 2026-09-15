@@ -31,9 +31,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nls-health-station.pages.dev/ep01-transcript.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nls-health-station.pages.dev/ep02.html</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nls-health-station.pages.dev/ep02-transcript.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://nls-health-station.pages.dev/ep03.html</loc>
@@ -41,9 +51,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nls-health-station.pages.dev/ep03-transcript.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nls-health-station.pages.dev/ep04.html</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nls-health-station.pages.dev/ep04-transcript.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://nls-health-station.pages.dev/ep05.html</loc>
@@ -51,9 +71,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nls-health-station.pages.dev/ep05-transcript.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nls-health-station.pages.dev/ep06.html</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nls-health-station.pages.dev/ep06-transcript.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://nls-health-station.pages.dev/ep07.html</loc>
@@ -61,9 +91,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nls-health-station.pages.dev/ep07-transcript.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nls-health-station.pages.dev/ep08.html</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nls-health-station.pages.dev/ep08-transcript.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://nls-health-station.pages.dev/ep09.html</loc>
@@ -71,9 +111,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nls-health-station.pages.dev/ep09-transcript.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nls-health-station.pages.dev/ep10.html</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nls-health-station.pages.dev/ep10-transcript.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://nls-health-station.pages.dev/ep11.html</loc>
@@ -81,8 +131,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nls-health-station.pages.dev/ep11-transcript.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nls-health-station.pages.dev/ep12.html</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nls-health-station.pages.dev/ep12-transcript.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
