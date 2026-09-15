@@ -510,32 +510,40 @@ button, input { font: inherit; color: inherit; }
   perspective: 220px;
 }
 .page-veil .dna-spin {
-  transform-origin: 48px 66px;
+  transform-origin: 48px 75px;
   transform-box: fill-box;
   animation: dna-spin 1.35s linear infinite;
 }
 .page-veil .dna-strand {
   fill: none;
   stroke: var(--accent);
-  stroke-width: 2.4;
+  stroke-width: 2.6;
   stroke-linecap: round;
-  opacity: 0.95;
+  stroke-linejoin: round;
 }
-.page-veil .dna-strand-b {
+.page-veil .dna-strand-front {
+  stroke: var(--accent);
+  opacity: 1;
+  stroke-width: 2.8;
+}
+.page-veil .dna-strand-back {
   stroke: var(--accent-2);
-  opacity: 0.85;
+  opacity: 0.45;
+  stroke-width: 2.2;
 }
 .page-veil .dna-rungs line {
-  stroke: color-mix(in srgb, var(--accent) 55%, var(--accent-2));
-  stroke-width: 1.2;
+  stroke: color-mix(in srgb, var(--accent) 40%, var(--accent-2));
+  stroke-width: 1.15;
   stroke-linecap: round;
-  opacity: 0.55;
+  opacity: 0.5;
 }
-.page-veil .dna-nodes circle {
-  fill: var(--accent);
-}
-.page-veil .dna-nodes circle:nth-child(even) {
+.page-veil .dna-nodes-back circle {
   fill: var(--accent-2);
+  opacity: 0.5;
+}
+.page-veil .dna-nodes-front circle {
+  fill: var(--accent);
+  opacity: 1;
 }
 @keyframes dna-spin {
   0% { transform: rotateY(0deg); }
