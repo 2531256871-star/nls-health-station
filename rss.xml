@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>NLS频谱健康站</title>
     <link>https://nls-health-station.pages.dev/</link>
@@ -21,8 +21,12 @@
       <link>https://nls-health-station.pages.dev/ep12.html</link>
       <guid isPermaLink="true">https://nls-health-station.pages.dev/ep12.html</guid>
       <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <description>本季收官。回到第一期那个问题——「什么是 NLS？」——咱们回头看看这 11 期走过的路。从认知建立、技术原理、应用落地，到回望来路与展望未来，11 期不是 11 个孤岛，而是 11 块拼图，拼出 NLS 的全貌。</description>
+      <description>第一季季度回顾（收官）。把 11 期串成出发、登高、远行、回望展望四阶段，重申诚实科普与补充医学定位，感谢听众陪伴。适合补听或快速建立全季地图。关键词：季度回顾、第一季收官、诚实科普、NLS全貌。
+
+本期要点：开场：回到起点；11 期的认知之旅；季终收束；结语与告别</description>
+      <content:encoded><![CDATA[<p>本季收官。回到第一期那个问题——「什么是 NLS？」——咱们回头看看这 11 期走过的路。从认知建立、技术原理、应用落地，到回望来路与展望未来，11 期不是 11 个孤岛，而是 11 块拼图，拼出 NLS 的全貌。</p><p>第一季季度回顾（收官）。把 11 期串成出发、登高、远行、回望展望四阶段，重申诚实科普与补充医学定位，感谢听众陪伴。适合补听或快速建立全季地图。关键词：季度回顾、第一季收官、诚实科普、NLS全貌。</p>]]></content:encoded>
       <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:subtitle>季度回顾（收官）</itunes:subtitle>
       <itunes:duration>8:36</itunes:duration>
       <itunes:keywords>季度回顾、收官、诚实科普、第一季、星图</itunes:keywords>
       <itunes:episode>12</itunes:episode>
@@ -36,8 +40,12 @@
       <link>https://nls-health-station.pages.dev/ep11.html</link>
       <guid isPermaLink="true">https://nls-health-station.pages.dev/ep11.html</guid>
       <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-      <description>EP10 讲了 NLS 的「来路」，EP11 聊它的「去路」。先看医疗行业大势——AI、可穿戴、远程、个性化、从治已病到预测。再看 NLS 自己的演进方向。未来是地平线，有方向有光，但永远有雾。</description>
+      <description>NLS 未来趋势展望：这棵树接下来往哪长。先看 AI、可穿戴、远程、个性化等医疗大势，再看 NLS 可能的演进枝桠，强调「有光也有雾」的理性展望。关键词：未来趋势、AI医疗、远程医疗、可穿戴。
+
+本期要点：开场：不画饼；医疗行业大背景；NLS 演进方向；未来的枝桠与雾</description>
+      <content:encoded><![CDATA[<p>EP10 讲了 NLS 的「来路」，EP11 聊它的「去路」。先看医疗行业大势——AI、可穿戴、远程、个性化、从治已病到预测。再看 NLS 自己的演进方向。未来是地平线，有方向有光，但永远有雾。</p><p>NLS 未来趋势展望：这棵树接下来往哪长。先看 AI、可穿戴、远程、个性化等医疗大势，再看 NLS 可能的演进枝桠，强调「有光也有雾」的理性展望。关键词：未来趋势、AI医疗、远程医疗、可穿戴。</p>]]></content:encoded>
       <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:subtitle>未来趋势展望</itunes:subtitle>
       <itunes:duration>8:25</itunes:duration>
       <itunes:keywords>未来趋势、AI医疗、可穿戴、远程医疗、地平线</itunes:keywords>
       <itunes:episode>11</itunes:episode>
@@ -51,8 +59,12 @@
       <link>https://nls-health-station.pages.dev/ep10.html</link>
       <guid isPermaLink="true">https://nls-health-station.pages.dev/ep10.html</guid>
       <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <description>前九期讲 NLS「是什么、怎么用」，本期讲它「从哪来」。从 1980 年代理论，到 1988 年触发传感器，到走出实验室、商业化、软件代代升级——37 年的家谱。也诚实话它的身世。</description>
+      <description>NLS 技术发展历程：从一个触发传感器到今天的 37 年。梳理理论萌芽、硬件诞生、商业化与软件代际，并诚实拆解厂商叙事与史料不确定性。关键词：技术史、Metatron、触发传感器、发展脉络。
+
+本期要点：开场：它从哪来；理论萌芽（1980s）；硬件诞生（1988）；实验室到市场；能力扩展与认证</description>
+      <content:encoded><![CDATA[<p>前九期讲 NLS「是什么、怎么用」，本期讲它「从哪来」。从 1980 年代理论，到 1988 年触发传感器，到走出实验室、商业化、软件代代升级——37 年的家谱。也诚实话它的身世。</p><p>NLS 技术发展历程：从一个触发传感器到今天的 37 年。梳理理论萌芽、硬件诞生、商业化与软件代际，并诚实拆解厂商叙事与史料不确定性。关键词：技术史、Metatron、触发传感器、发展脉络。</p>]]></content:encoded>
       <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:subtitle>技术发展历程</itunes:subtitle>
       <itunes:duration>10:44</itunes:duration>
       <itunes:keywords>技术史、触发传感器、Metatron、发展历程、认证</itunes:keywords>
       <itunes:episode>10</itunes:episode>
@@ -66,8 +78,12 @@
       <link>https://nls-health-station.pages.dev/ep09.html</link>
       <guid isPermaLink="true">https://nls-health-station.pages.dev/ep09.html</guid>
       <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
-      <description>前八期讲 NLS「能做什么」，本期讲它能「照顾谁」。孩子坐不住、老人怕折腾、孕妇怕辐射——传统检查最难搞的人，恰恰最需要温柔的工具。NLS 无创、无辐射、甚至「睡着了也能查」。但越敏感的人群，越要谨慎。</description>
+      <description>儿科与特殊人群应用：最脆弱的人需要最温柔的工具。讨论孩子、老人、孕妇、意识障碍者等难配合场景下，无创无辐射的价值与必须遵守的医疗边界。关键词：儿科、孕妇、特殊人群、无创检查。
+
+本期要点：开场：治未病对谁最有意义；传统检查的温柔盲区；儿童与青少年；孕妇、老人、康复人群；特殊人群的诚实边界</description>
+      <content:encoded><![CDATA[<p>前八期讲 NLS「能做什么」，本期讲它能「照顾谁」。孩子坐不住、老人怕折腾、孕妇怕辐射——传统检查最难搞的人，恰恰最需要温柔的工具。NLS 无创、无辐射、甚至「睡着了也能查」。但越敏感的人群，越要谨慎。</p><p>儿科与特殊人群应用：最脆弱的人需要最温柔的工具。讨论孩子、老人、孕妇、意识障碍者等难配合场景下，无创无辐射的价值与必须遵守的医疗边界。关键词：儿科、孕妇、特殊人群、无创检查。</p>]]></content:encoded>
       <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:subtitle>儿科与特殊人群应用</itunes:subtitle>
       <itunes:duration>14:40</itunes:duration>
       <itunes:keywords>儿科、孕妇、老人、特殊人群、无创无辐射</itunes:keywords>
       <itunes:episode>9</itunes:episode>
@@ -81,8 +97,12 @@
       <link>https://nls-health-station.pages.dev/ep08.html</link>
       <guid isPermaLink="true">https://nls-health-station.pages.dev/ep08.html</guid>
       <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <description>EP07 讲「管已有问题」，EP08 再往前推——「别让问题发生」。中医叫「上工治未病」。本期聊 NLS 在健康筛查里的角色：补传统体检的「功能盲区」、做早期预警；也诚实话筛查的边界。</description>
+      <description>健康预防与筛查：从「管健康」到「防健康问题」。介绍三级预防与 NLS 在二级预防中的角色，补传统体检的功能盲区；同时诚实讨论假阳性、过度诊断与筛查边界。关键词：预防医学、治未病、健康筛查、早期预警。
+
+本期要点：开场：治未病；预防医学三个层次；NLS 让早期发现可操作；筛查的阴暗面</description>
+      <content:encoded><![CDATA[<p>EP07 讲「管已有问题」，EP08 再往前推——「别让问题发生」。中医叫「上工治未病」。本期聊 NLS 在健康筛查里的角色：补传统体检的「功能盲区」、做早期预警；也诚实话筛查的边界。</p><p>健康预防与筛查：从「管健康」到「防健康问题」。介绍三级预防与 NLS 在二级预防中的角色，补传统体检的功能盲区；同时诚实讨论假阳性、过度诊断与筛查边界。关键词：预防医学、治未病、健康筛查、早期预警。</p>]]></content:encoded>
       <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:subtitle>健康预防与筛查</itunes:subtitle>
       <itunes:duration>10:59</itunes:duration>
       <itunes:keywords>预防医学、治未病、筛查、早期预警、假阳性</itunes:keywords>
       <itunes:episode>8</itunes:episode>
@@ -96,8 +116,12 @@
       <link>https://nls-health-station.pages.dev/ep07.html</link>
       <guid isPermaLink="true">https://nls-health-station.pages.dev/ep07.html</guid>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <description>慢性病不是治一次就好的，是一辈子的事。本期聊 NLS 怎么帮我们把慢病「长期管起来」——四个字：早、动、整、个。从骨关节炎早于 X 光发现病变，到同病不同治的个体化案例，再到诚实的边界。</description>
+      <description>慢性疾病管理：从「治已病」到「管健康」。用早、动、整、个四个字讲长期管理视角，覆盖骨关节炎早检、同病不同治等案例，并说明不能替代药物与生活方式干预。关键词：慢性病管理、早期发现、个体化、长期监测。
+
+本期要点：开场：慢病是一辈子的事；早：更早看见；动、整、个；诚实边界</description>
+      <content:encoded><![CDATA[<p>慢性病不是治一次就好的，是一辈子的事。本期聊 NLS 怎么帮我们把慢病「长期管起来」——四个字：早、动、整、个。从骨关节炎早于 X 光发现病变，到同病不同治的个体化案例，再到诚实的边界。</p><p>慢性疾病管理：从「治已病」到「管健康」。用早、动、整、个四个字讲长期管理视角，覆盖骨关节炎早检、同病不同治等案例，并说明不能替代药物与生活方式干预。关键词：慢性病管理、早期发现、个体化、长期监测。</p>]]></content:encoded>
       <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:subtitle>慢性疾病管理</itunes:subtitle>
       <itunes:duration>16:03</itunes:duration>
       <itunes:keywords>慢性病、慢病管理、早期发现、个体化、长期监测</itunes:keywords>
       <itunes:episode>7</itunes:episode>
@@ -111,8 +135,12 @@
       <link>https://nls-health-station.pages.dev/ep06.html</link>
       <guid isPermaLink="true">https://nls-health-station.pages.dev/ep06.html</guid>
       <pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate>
-      <description>理论讲完五期，真实诊室里到底用得上吗？本期带你走进真实临床：从自行车队发现「肌肉问题的根源在内脏」，到肺脓肿的动态监测，看 NLS 如何在「早期、无创、动态、整体」上发力——也诚实讲清它的边界。</description>
+      <description>NLS 临床应用案例走进真实诊室：从运动队「肌肉问题根源在内脏」到肺脓肿动态监测，梳理早期、无创、动态、整体四个价值点，并标明哪些是观察性数据、不能夸大因果。关键词：临床应用、动态监测、辅助诊断。
+
+本期要点：开场：真实诊室用得上吗？；NLS 在诊室里怎么用；明星案例：自行车队；各专科真实应用；规模、边界与诚实局限</description>
+      <content:encoded><![CDATA[<p>理论讲完五期，真实诊室里到底用得上吗？本期带你走进真实临床：从自行车队发现「肌肉问题的根源在内脏」，到肺脓肿的动态监测，看 NLS 如何在「早期、无创、动态、整体」上发力——也诚实讲清它的边界。</p><p>NLS 临床应用案例走进真实诊室：从运动队「肌肉问题根源在内脏」到肺脓肿动态监测，梳理早期、无创、动态、整体四个价值点，并标明哪些是观察性数据、不能夸大因果。关键词：临床应用、动态监测、辅助诊断。</p>]]></content:encoded>
       <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:subtitle>NLS临床应用案例</itunes:subtitle>
       <itunes:duration>14:08</itunes:duration>
       <itunes:keywords>临床应用、自行车队、动态监测、早期无创、辅助诊断</itunes:keywords>
       <itunes:episode>6</itunes:episode>
@@ -126,8 +154,12 @@
       <link>https://nls-health-station.pages.dev/ep05.html</link>
       <guid isPermaLink="true">https://nls-health-station.pages.dev/ep05.html</guid>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <description>上期学会了「听懂」身体的频率。听懂之后呢？本期认识 Meta 疗法——那个拿着「标准音叉」帮身体校准音高的调音师。从降噪耳机式的反向共振，到帮细胞「开锁」的矫正机制，客观讲原理，也诚实讲局限。</description>
+      <description>Meta 疗法原理：听懂频率之后如何「矫正」。用降噪耳机讲反向共振，用调音师讲元校正，区分理论表述与可验证证据，强调补充医学定位与局限。关键词：Meta疗法、元校正、扭转场、反向共振。
+
+本期要点：开场：从「听懂」到「矫正」；Meta 疗法是什么；元校正与扭转场；四种矫正手段与适用场景</description>
+      <content:encoded><![CDATA[<p>上期学会了「听懂」身体的频率。听懂之后呢？本期认识 Meta 疗法——那个拿着「标准音叉」帮身体校准音高的调音师。从降噪耳机式的反向共振，到帮细胞「开锁」的矫正机制，客观讲原理，也诚实讲局限。</p><p>Meta 疗法原理：听懂频率之后如何「矫正」。用降噪耳机讲反向共振，用调音师讲元校正，区分理论表述与可验证证据，强调补充医学定位与局限。关键词：Meta疗法、元校正、扭转场、反向共振。</p>]]></content:encoded>
       <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:subtitle>Meta疗法原理</itunes:subtitle>
       <itunes:duration>18:01</itunes:duration>
       <itunes:keywords>Meta疗法、元校正、扭转场、反向共振、调音师</itunes:keywords>
       <itunes:episode>5</itunes:episode>
@@ -141,8 +173,12 @@
       <link>https://nls-health-station.pages.dev/ep04.html</link>
       <guid isPermaLink="true">https://nls-health-station.pages.dev/ep04.html</guid>
       <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
-      <description>上期说到每个细胞都在用频率「说话」——可我们怎么「听懂」它？本期认识频谱分析技术：从棱镜分光到 NLS 的四种频谱视图，教你一眼看出身体是在「建设」还是「消耗」。</description>
+      <description>频谱分析技术详解：如何「听懂」身体的频率。从棱镜分光到 NLS 四种频谱视图（能量、平衡、熵、NLS），解释红蓝解离、扫描步骤与关键参数，并诚实讨论证据边界。关键词：频谱分析、非线性、平衡频谱、熵频谱。
+
+本期要点：开场：细胞在说话，怎么听懂？；什么是频谱分析；NLS 如何做频谱分析；四种频谱视图（重点）</description>
+      <content:encoded><![CDATA[<p>上期说到每个细胞都在用频率「说话」——可我们怎么「听懂」它？本期认识频谱分析技术：从棱镜分光到 NLS 的四种频谱视图，教你一眼看出身体是在「建设」还是「消耗」。</p><p>频谱分析技术详解：如何「听懂」身体的频率。从棱镜分光到 NLS 四种频谱视图（能量、平衡、熵、NLS），解释红蓝解离、扫描步骤与关键参数，并诚实讨论证据边界。关键词：频谱分析、非线性、平衡频谱、熵频谱。</p>]]></content:encoded>
       <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:subtitle>频谱分析技术</itunes:subtitle>
       <itunes:duration>15:16</itunes:duration>
       <itunes:keywords>频谱分析、非线性、能量视图、平衡频谱、熵频谱</itunes:keywords>
       <itunes:episode>4</itunes:episode>
@@ -156,8 +192,12 @@
       <link>https://nls-health-station.pages.dev/ep03.html</link>
       <guid isPermaLink="true">https://nls-health-station.pages.dev/ep03.html</guid>
       <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-      <description>你的身体里有一个看不见的通信网络——每一个细胞都像微型电台，用特定频率发送和接收信息。本期带你探索生物场世界，了解细胞如何「说话」，以及为什么这套理论和中医的「气」不谋而合。</description>
+      <description>生物场与细胞通信：身体里看不见的通信网络。细胞如何用频率「说话」，健康与病变频率有何不同，生物场为何常被拿来与「气」、经络对照。适合想理解 NLS 底层假设的听众。关键词：生物场、细胞通信、频率、经络。
+
+本期要点：开场；除了神经和血管，还有别的通信吗？；什么是生物场？；细胞如何用频率通信；与中医的奇妙呼应</description>
+      <content:encoded><![CDATA[<p>你的身体里有一个看不见的通信网络——每一个细胞都像微型电台，用特定频率发送和接收信息。本期带你探索生物场世界，了解细胞如何「说话」，以及为什么这套理论和中医的「气」不谋而合。</p><p>生物场与细胞通信：身体里看不见的通信网络。细胞如何用频率「说话」，健康与病变频率有何不同，生物场为何常被拿来与「气」、经络对照。适合想理解 NLS 底层假设的听众。关键词：生物场、细胞通信、频率、经络。</p>]]></content:encoded>
       <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:subtitle>生物场与细胞通信</itunes:subtitle>
       <itunes:duration>15:41</itunes:duration>
       <itunes:keywords>生物场、细胞通信、频率、中医气、经络</itunes:keywords>
       <itunes:episode>3</itunes:episode>
@@ -171,8 +211,12 @@
       <link>https://nls-health-station.pages.dev/ep02.html</link>
       <guid isPermaLink="true">https://nls-health-station.pages.dev/ep02.html</guid>
       <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
-      <description>如果把宇宙比作一个超级 WiFi 网络，我们身体里的每一个细胞就是连接到这个网络的设备。本期带你走进量子医学——探索 QELT（量子熵逻辑理论）如何统一宇宙四种基本力，以及「信息先于物质」如何改变我们对健康的认知。</description>
+      <description>量子医学基础：QELT（量子熵逻辑理论）如何理解「信息先于物质」，以及它与中医阴阳、治未病的对话。节目用超级 WiFi 与建筑蓝图比喻，帮助零基础听众建立理论地图，同时说明这是补充医学语境下的前沿讨论，不能替代主流医疗。关键词：量子医学、QELT、量子熵场、中医。
+
+本期要点：开场：物理与医学的交集；什么是量子医学？；QELT 核心：量子熵场；信息先于物质；与中医智慧的联系；NLS 的实际应用</description>
+      <content:encoded><![CDATA[<p>如果把宇宙比作一个超级 WiFi 网络，我们身体里的每一个细胞就是连接到这个网络的设备。本期带你走进量子医学——探索 QELT（量子熵逻辑理论）如何统一宇宙四种基本力，以及「信息先于物质」如何改变我们对健康的认知。</p><p>量子医学基础：QELT（量子熵逻辑理论）如何理解「信息先于物质」，以及它与中医阴阳、治未病的对话。节目用超级 WiFi 与建筑蓝图比喻，帮助零基础听众建立理论地图，同时说明这是补充医学语境下的前沿讨论，不能替代主流医疗。关键词：量子医学、QELT、量子熵场、中医。</p>]]></content:encoded>
       <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:subtitle>量子医学基础</itunes:subtitle>
       <itunes:duration>13:01</itunes:duration>
       <itunes:keywords>量子医学、QELT、量子熵场、信息先于物质、中医阴阳</itunes:keywords>
       <itunes:episode>2</itunes:episode>
@@ -186,8 +230,12 @@
       <link>https://nls-health-station.pages.dev/ep01.html</link>
       <guid isPermaLink="true">https://nls-health-station.pages.dev/ep01.html</guid>
       <pubDate>Tue, 09 Jun 2026 00:00:00 +0000</pubDate>
-      <description>想象一下，如果身体能像手机一样，随时「告诉」我们哪里不舒服，该多方便？本期节目，小乐和小思带你走进 NLS 诊断的世界——通过检测细胞发出的微弱电磁信号，帮助我们了解身体的健康状况。</description>
+      <description>《NLS频谱健康站》开篇。小乐与小思从「身体能不能像手机一样报告不适」讲起，介绍 NLS（非线性诊断）如何通过细胞电磁信号做健康评估，并对比传统体检在侵入性、全身性与早期预警上的差异。适合第一次接触 NLS、量子医学或健康科普播客的听众。关键词：NLS诊断、健康管理、细胞频率、预防医学。
+
+本期要点：开场：欢迎来到《NLS频谱健康站》；身体能「说话」吗？；NLS 诊断是什么？；NLS 与传统体检；技术背景；实际应用能做什么？</description>
+      <content:encoded><![CDATA[<p>想象一下，如果身体能像手机一样，随时「告诉」我们哪里不舒服，该多方便？本期节目，小乐和小思带你走进 NLS 诊断的世界——通过检测细胞发出的微弱电磁信号，帮助我们了解身体的健康状况。</p><p>《NLS频谱健康站》开篇。小乐与小思从「身体能不能像手机一样报告不适」讲起，介绍 NLS（非线性诊断）如何通过细胞电磁信号做健康评估，并对比传统体检在侵入性、全身性与早期预警上的差异。适合第一次接触 NLS、量子医学或健康科普播客的听众。关键词：NLS诊断、健康管理、细胞频率、预防医学。</p>]]></content:encoded>
       <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:subtitle>什么是NLS诊断</itunes:subtitle>
       <itunes:duration>10:55</itunes:duration>
       <itunes:keywords>NLS诊断、量子医学、健康管理、预防医学、细胞频率</itunes:keywords>
       <itunes:episode>1</itunes:episode>
