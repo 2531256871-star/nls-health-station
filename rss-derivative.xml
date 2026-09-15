@@ -5,7 +5,7 @@
     <link>https://nls-health-station.pages.dev/derivatives.html</link>
     <language>zh-CN</language>
     <copyright>© 2026 NLS频谱健康站 · 内容仅供学习交流，不构成医疗建议</copyright>
-    <description>由 yt2podcast 管线将 YouTube 上的 NLS / Metatron 相关英文资料自动转录、意译并合成为中文双人播客。内容多来自厂商或技术演示材料，仅供了解其叙事与技术描述，不构成独立科学结论，也不代表本节目立场。</description>
+    <description>站内衍生内容专辑</description>
     <atom:link href="https://nls-health-station.pages.dev/rss-derivative.xml" rel="self" type="application/rss+xml"/>
     <itunes:author>小乐 &amp; 小思</itunes:author>
     <itunes:explicit>false</itunes:explicit>

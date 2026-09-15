@@ -691,10 +691,10 @@
   ],
   "derivative": {
     "id": "yt-translated",
-    "title": "衍生专辑 · 厂商资料中文转译",
+    "title": "衍生专辑",
     "shortTitle": "衍生专辑",
-    "description": "由 yt2podcast 管线将 YouTube 上的 NLS / Metatron 相关英文资料自动转录、意译并合成为中文双人播客。内容多来自厂商或技术演示材料，仅供了解其叙事与技术描述，不构成独立科学结论，也不代表本节目立场。",
-    "sourceNote": "音频由公开 YouTube 视频转译生成；版权归原作者/上传者所有。本站仅作学习整理，并标注来源。"
+    "description": "站内衍生内容专辑。",
+    "sourceNote": ""
   },
   "derivativeEpisodes": [
     {
