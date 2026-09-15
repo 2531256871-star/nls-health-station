@@ -446,12 +446,34 @@
     el.id = "page-veil";
     el.className = "page-veil";
     el.setAttribute("aria-hidden", "true");
+    // 简易双螺旋：无卡片底、无文字，仅 SVG 自转
     el.innerHTML =
-      '<div class="page-veil-card">' +
-      '<div class="page-veil-orb" aria-hidden="true"></div>' +
-      '<div class="page-veil-bar" aria-hidden="true"></div>' +
-      '<div>加载中</div>' +
-      "</div>";
+      '<svg class="dna" viewBox="0 0 80 120" width="56" height="84" aria-hidden="true">' +
+      '<g class="dna-spin">' +
+      '<path class="dna-strand" d="M22 6 C58 24 58 42 22 60 C-14 78 -14 96 22 114" />' +
+      '<path class="dna-strand dna-strand-b" d="M58 6 C22 24 22 42 58 60 C94 78 94 96 58 114" />' +
+      '<g class="dna-rungs">' +
+      '<line x1="24" y1="18" x2="56" y2="18" />' +
+      '<line x1="30" y1="30" x2="50" y2="30" />' +
+      '<line x1="24" y1="42" x2="56" y2="42" />' +
+      '<line x1="24" y1="60" x2="56" y2="60" />' +
+      '<line x1="30" y1="72" x2="50" y2="72" />' +
+      '<line x1="24" y1="84" x2="56" y2="84" />' +
+      '<line x1="30" y1="96" x2="50" y2="96" />' +
+      '<line x1="24" y1="108" x2="56" y2="108" />' +
+      "</g>" +
+      '<g class="dna-nodes">' +
+      '<circle cx="22" cy="18" r="2.2"/><circle cx="58" cy="18" r="2.2"/>' +
+      '<circle cx="30" cy="30" r="1.8"/><circle cx="50" cy="30" r="1.8"/>' +
+      '<circle cx="22" cy="42" r="2.2"/><circle cx="58" cy="42" r="2.2"/>' +
+      '<circle cx="22" cy="60" r="2.2"/><circle cx="58" cy="60" r="2.2"/>' +
+      '<circle cx="30" cy="72" r="1.8"/><circle cx="50" cy="72" r="1.8"/>' +
+      '<circle cx="22" cy="84" r="2.2"/><circle cx="58" cy="84" r="2.2"/>' +
+      '<circle cx="30" cy="96" r="1.8"/><circle cx="50" cy="96" r="1.8"/>' +
+      '<circle cx="22" cy="108" r="2.2"/><circle cx="58" cy="108" r="2.2"/>' +
+      "</g>" +
+      "</g>" +
+      "</svg>";
     document.body.appendChild(el);
     return el;
   }
