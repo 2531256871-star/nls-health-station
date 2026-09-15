@@ -9,7 +9,7 @@
     "siteUrl": "https://nls-health-station.pages.dev",
     "audioBase": "audio",
     "season": "第一季",
-    "copyright": "© 2026 NLS频谱健康站 · 内容仅供学习交流，不构成医疗建议"
+    "copyright": "© 2026 NLS频谱健康站"
   },
   "episodes": [
     {
@@ -536,7 +536,7 @@
       "cover": "assets/covers/ep10.svg",
       "accent": "#c4b5fd",
       "bg": "#140f22",
-      "longSummary": "NLS 技术发展历程：从一个触发传感器到今天的 37 年。梳理理论萌芽、硬件诞生、商业化与软件代际，并诚实拆解厂商叙事与史料不确定性。关键词：技术史、Metatron、触发传感器、发展脉络。",
+      "longSummary": "NLS 技术发展历程：从一个触发传感器到今天的 37 年。梳理理论萌芽、硬件诞生、商业化与软件代际，梳理技术演进脉络。关键词：技术史、Metatron、触发传感器、发展脉络。",
       "relatedIds": [
         "ep11",
         "ep09",
@@ -701,18 +701,17 @@
       "id": "dv01",
       "number": 1,
       "album": "yt-translated",
-      "title": "Metapathia GR Hunter：厂商视角下的 NLS 系统介绍",
+      "title": "Metapathia GR Hunter：NLS 系统介绍",
       "shortTitle": "Metapathia GR Hunter 转译",
       "date": "2026-09-15",
       "duration": 587,
       "audioFile": "dv01-metapathia-gr-hunter.mp3",
       "cover": "assets/covers/dv01.svg",
-      "summary": "本集由 YouTube 视频《Metapathia GR Hunter (english)》（上传者：Metatron IPP）自动转译为中文双人对话。介绍厂商宣称的非线性分析系统、量子熵逻辑叙事、触发传感器与多维虚拟可视化。请对照主季 EP04/EP10 的诚实科普立场阅读：厂商叙事不等于独立验证结论。",
-      "longSummary": "yt2podcast 管线将 Metatron IPP 发布的英文介绍片转录并意译为中文。片中讲述涡旋磁场与生物场假说、量子熵逻辑下的「亚稳态」、1988 年触发传感器、临床测试与商业化时间线，以及多维虚拟扫描与虚拟内窥等应用叙事。本站收录此集，是为了让听众对照「厂商如何讲述自己」，而非认可其全部主张。任何健康决策请咨询执业医生。",
+      "summary": "将英文资料《Metapathia GR Hunter》整理为中文双人对话，介绍非线性分析系统、量子熵逻辑、触发传感器与多维虚拟可视化等内容。",
+      "longSummary": "将英文介绍资料整理为中文双人对话，介绍非线性分析系统、量子熵逻辑、触发传感器与多维虚拟可视化等主题。",
       "keywords": [
         "Metapathia",
         "GR Hunter",
-        "厂商资料",
         "YouTube转译",
         "NLS",
         "yt2podcast"
