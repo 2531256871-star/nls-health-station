@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="衍生 EP01 Metapathia GR Hunter">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#6ecbff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0b1a2e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="800" fill="#0b1a2e"/>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <g fill="none" stroke="#6ecbff" stroke-width="3" opacity="0.9">
+    <rect x="250" y="200" width="300" height="220" rx="12"/>
+    <path d="M300 320 C340 260 460 260 500 320 C460 380 340 380 300 320 Z"/>
+    <line x1="280" y1="450" x2="520" y2="450"/>
+    <line x1="300" y1="480" x2="500" y2="480"/>
+  </g>
+  <text x="64" y="100" font-family="ui-sans-serif, system-ui, sans-serif" font-size="36" font-weight="600" fill="#6ecbff" letter-spacing="4">衍生 · DV.01</text>
+  <text x="64" y="720" font-family="ui-sans-serif, system-ui, sans-serif" font-size="26" fill="#e8eef7" opacity="0.92">Metapathia GR Hunter 转译</text>
+  <text x="64" y="760" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="#e8eef7" opacity="0.45" letter-spacing="2">NLS频谱健康站 · 厂商资料转译</text>
+</svg>

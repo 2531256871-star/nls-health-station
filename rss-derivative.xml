@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NLS频谱健康站 · 衍生专辑</title>
+    <link>https://nls-health-station.pages.dev/derivatives.html</link>
+    <language>zh-CN</language>
+    <copyright>© 2026 NLS频谱健康站 · 内容仅供学习交流，不构成医疗建议</copyright>
+    <description>由 yt2podcast 管线将 YouTube 上的 NLS / Metatron 相关英文资料自动转录、意译并合成为中文双人播客。内容多来自厂商或技术演示材料，仅供了解其叙事与技术描述，不构成独立科学结论，也不代表本节目立场。</description>
+    <atom:link href="https://nls-health-station.pages.dev/rss-derivative.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>小乐 &amp; 小思</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <itunes:category text="Health"/>
+    <itunes:image href="https://nls-health-station.pages.dev/assets/logo.svg"/>
+    <item>
+      <title>DV.01 Metapathia GR Hunter：厂商视角下的 NLS 系统介绍</title>
+      <link>https://nls-health-station.pages.dev/dv01.html</link>
+      <guid isPermaLink="true">https://nls-health-station.pages.dev/dv01.html</guid>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <description>yt2podcast 管线将 Metatron IPP 发布的英文介绍片转录并意译为中文。片中讲述涡旋磁场与生物场假说、量子熵逻辑下的「亚稳态」、1988 年触发传感器、临床测试与商业化时间线，以及多维虚拟扫描与虚拟内窥等应用叙事。本站收录此集，是为了让听众对照「厂商如何讲述自己」，而非认可其全部主张。任何健康决策请咨询执业医生。</description>
+      <itunes:author>小乐 &amp; 小思</itunes:author>
+      <itunes:duration>9:47</itunes:duration>
+      <itunes:keywords>Metapathia、GR Hunter、厂商资料、YouTube转译、NLS、yt2podcast</itunes:keywords>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:image href="https://nls-health-station.pages.dev/assets/covers/dv01.svg"/>
+      <enclosure url="https://nls-health-station.pages.dev/audio/dv01-metapathia-gr-hunter.mp3" length="0" type="audio/mpeg"/>
+    </item>
+  </channel>
+</rss>

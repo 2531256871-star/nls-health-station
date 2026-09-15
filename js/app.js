@@ -189,7 +189,7 @@
       const ep = data.episodes.find((e) => e.id === state.id);
       if (!ep) return;
       this.setSite(data.site);
-      this.setCatalog(data.episodes);
+      this.setCatalog([...(data.episodes || []), ...(data.derivativeEpisodes || [])]);
       this.show(ep, { autoplay: false, seek: state.time || 0 });
     }
   }
@@ -221,7 +221,7 @@
     const p = ensurePlayer();
     if (!p) return;
     p.setSite(data.site);
-    p.setCatalog(data.episodes);
+    p.setCatalog([...(data.episodes || []), ...(data.derivativeEpisodes || [])]);
     const ep = data.episodes.find((e) => e.id === id);
     if (!ep) return;
     p.show(ep, opts);
@@ -306,7 +306,7 @@
       const p = ensurePlayer();
       if (p) {
         p.setSite(data.site);
-        p.setCatalog(data.episodes);
+        p.setCatalog([...(data.episodes || []), ...(data.derivativeEpisodes || [])]);
       }
       await p?.restore();
     } catch (err) {
