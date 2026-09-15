@@ -52,7 +52,10 @@
   }
 
   function audioUrl(site, ep) {
-    return `${site.audioBase.replace(/\/$/, "")}/${ep.audioFile}`;
+    const base = (site?.audioBase || "audio").replace(/\/$/, "");
+    // 相对路径在 Audio 上有时解析不稳，补成绝对 URL
+    if (/^https?:\/\//i.test(base)) return `${base}/${ep.audioFile}`;
+    return new URL(`${base}/${ep.audioFile}`, location.href).href;
   }
 
   function loadPlayerState() {
@@ -92,11 +95,28 @@
       this.el.play.addEventListener("click", () => this.toggle());
       this.el.prev.addEventListener("click", () => this.step(-1));
       this.el.next.addEventListener("click", () => this.step(1));
-      this.el.bar.addEventListener("click", (e) => {
+      this.el.bar.addEventListener("pointerdown", (e) => {
         if (!this.audio.duration) return;
-        const rect = this.el.bar.getBoundingClientRect();
-        const ratio = (e.clientX - rect.left) / rect.width;
-        this.audio.currentTime = ratio * this.audio.duration;
+        e.preventDefault();
+        this.el.bar.setPointerCapture?.(e.pointerId);
+        this.seeking = true;
+        this.seekFromEvent(e);
+      });
+      this.el.bar.addEventListener("pointermove", (e) => {
+        if (!this.seeking || !this.audio.duration) return;
+        this.seekFromEvent(e);
+      });
+      const endSeek = (e) => {
+        if (!this.seeking) return;
+        this.seeking = false;
+        try { this.el.bar.releasePointerCapture?.(e.pointerId); } catch {}
+      };
+      this.el.bar.addEventListener("pointerup", endSeek);
+      this.el.bar.addEventListener("pointercancel", endSeek);
+      // 兼容只支持 click 的环境
+      this.el.bar.addEventListener("click", (e) => {
+        if (this.seeking || !this.audio.duration) return;
+        this.seekFromEvent(e);
       });
 
       this.audio.addEventListener("timeupdate", () => this.syncProgress());
@@ -120,6 +140,20 @@
       this.episodes = episodes;
     }
 
+    seekFromEvent(e) {
+      const rect = this.el.bar.getBoundingClientRect();
+      if (!rect.width) return;
+      const ratio = Math.min(1, Math.max(0, (e.clientX - rect.left) / rect.width));
+      this.audio.currentTime = ratio * (this.audio.duration || 0);
+      this.syncProgress();
+    }
+
+    epLabel(ep) {
+      const num = String(ep.number).padStart(2, "0");
+      const prefix = String(ep.id || "").startsWith("dv") ? "DV." : "EP.";
+      return `${prefix}${num}`;
+    }
+
     show(ep, { autoplay = false, seek = null } = {}) {
       this.ep = ep;
       this.root.classList.add("is-on");
@@ -127,29 +161,40 @@
         this.el.cover.src = ep.cover;
         this.el.cover.alt = ep.shortTitle || ep.title;
       }
-      this.el.title.textContent = `EP.${String(ep.number).padStart(2, "0")} ${ep.shortTitle || ep.title}`;
+      this.el.title.textContent = `${this.epLabel(ep)} ${ep.shortTitle || ep.title}`;
       this.el.sub.textContent = `${this.site?.author || ""} · ${fmtDur(ep.duration)}`;
       const src = audioUrl(this.site, ep);
-      if (this.audio.src !== src && !this.audio.src.endsWith(ep.audioFile)) {
+      const currentFile = (this.audio.currentSrc || this.audio.src || "").split("/").pop();
+      if (currentFile !== ep.audioFile) {
         this.audio.src = src;
+        this.audio.load();
       }
       if (seek != null && !Number.isNaN(seek)) {
-        const onMeta = () => {
-          this.audio.currentTime = seek;
-          this.audio.removeEventListener("loadedmetadata", onMeta);
-        };
-        this.audio.addEventListener("loadedmetadata", onMeta);
-        if (this.audio.readyState >= 1) this.audio.currentTime = seek;
+        const applySeek = () => { this.audio.currentTime = seek; };
+        if (this.audio.readyState >= 1) applySeek();
+        else this.audio.addEventListener("loadedmetadata", applySeek, { once: true });
       }
       this.persist();
-      if (autoplay) this.audio.play().catch(() => {});
+      if (autoplay) {
+        const p = this.audio.play();
+        if (p && p.catch) p.catch(() => { /* 自动播放被浏览器拦截时忽略 */ });
+      }
       this.syncProgress();
     }
 
     toggle() {
-      if (!this.ep) return;
-      if (this.audio.paused) this.audio.play().catch(() => {});
-      else this.audio.pause();
+      if (!this.ep) {
+        // 未选集时尝试恢复上次
+        const state = loadPlayerState();
+        if (state?.id) {
+          playEpisodeById(state.id, { autoplay: true, seek: state.time || 0 });
+        }
+        return;
+      }
+      if (this.audio.paused) {
+        const p = this.audio.play();
+        if (p && p.catch) p.catch(() => {});
+      } else this.audio.pause();
     }
 
     step(dir, autoplay = false) {
@@ -320,12 +365,15 @@
     const page = document.body.dataset.page;
     if (page === "home") await renderHome();
     if (page === "episodes") await renderEpisodes();
-    if (page === "episode") await renderEpisodeDetail();
-    if (page === "about" || page === "disclaimer") {
-      try {
-        fillFooter(await loadData());
-      } catch {}
+    if (page === "episode" || page === "transcript" || page === "derivative") {
+      if (page === "episode") await renderEpisodeDetail();
+      else bindPlayButtons(document);
     }
+    if (page === "about" || page === "disclaimer") {
+      try { fillFooter(await loadData()); } catch {}
+    }
+    // 所有页面兜底：绑定播放按钮
+    bindPlayButtons(document);
   }
 
   document.addEventListener("DOMContentLoaded", boot);
