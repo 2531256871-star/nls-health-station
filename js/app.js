@@ -2,6 +2,9 @@
 (function () {
   const STORE_THEME = "nls-theme";
   const STORE_PLAYER = "nls-player";
+  const STORE_DATA = "nls-episodes-cache";
+  const STORE_DATA_AT = "nls-episodes-cache-at";
+  const DATA_TTL_MS = 30 * 60 * 1000; // 30 分钟后后台刷新
 
   const $ = (sel, el = document) => el.querySelector(sel);
   const $$ = (sel, el = document) => Array.from(el.querySelectorAll(sel));
@@ -42,13 +45,95 @@
     });
   }
 
-  /* Data */
-  async function loadData() {
-    if (window.__NLS_DATA__) return window.__NLS_DATA__;
+  /* Data — localStorage 优先，网络后台刷新 */
+  function readDataCache() {
+    try {
+      const raw = localStorage.getItem(STORE_DATA);
+      if (!raw) return null;
+      return JSON.parse(raw);
+    } catch {
+      return null;
+    }
+  }
+
+  function writeDataCache(data) {
+    try {
+      localStorage.setItem(STORE_DATA, JSON.stringify(data));
+      localStorage.setItem(STORE_DATA_AT, String(Date.now()));
+    } catch {}
+  }
+
+  async function fetchEpisodes() {
     const res = await fetch("data/episodes.json", { cache: "no-cache" });
     if (!res.ok) throw new Error("无法加载节目数据");
-    window.__NLS_DATA__ = await res.json();
-    return window.__NLS_DATA__;
+    const data = await res.json();
+    writeDataCache(data);
+    return data;
+  }
+
+  async function loadData() {
+    if (window.__NLS_DATA__) return window.__NLS_DATA__;
+
+    const cached = readDataCache();
+    const age = Date.now() - Number(localStorage.getItem(STORE_DATA_AT) || 0);
+    if (cached && cached.site) {
+      window.__NLS_DATA__ = cached;
+      if (!(age >= 0 && age < DATA_TTL_MS)) {
+        // 过期则后台刷新，不阻塞渲染
+        fetchEpisodes()
+          .then((fresh) => {
+            window.__NLS_DATA__ = fresh;
+          })
+          .catch(() => {});
+      }
+      return cached;
+    }
+
+    const data = await fetchEpisodes();
+    window.__NLS_DATA__ = data;
+    return data;
+  }
+
+  function prefetchUrl(href) {
+    if (!href || href.startsWith("http") || href.startsWith("mailto:") || href.endsWith(".xml")) return;
+    if (document.querySelector(`link[rel="prefetch"][href="${href}"]`)) return;
+    const link = document.createElement("link");
+    link.rel = "prefetch";
+    link.href = href;
+    link.as = href.endsWith(".css") ? "style" : href.endsWith(".js") ? "script" : "document";
+    document.head.appendChild(link);
+  }
+
+  function prefetchKeyPages() {
+    const run = () => {
+      const page = document.body.dataset.page || "";
+      const list = new Set(["episodes.html", "derivatives.html"]);
+      if (page === "episode" || page === "transcript") {
+        const id = document.body.dataset.epId || "ep01";
+        list.add(`${id}.html`);
+        list.add("index.html");
+        // 上下集
+        const m = /^ep(\d{2})$/.exec(id);
+        if (m) {
+          const n = parseInt(m[1], 10);
+          if (n > 1) list.add(`ep${String(n - 1).padStart(2, "0")}.html`);
+          if (n < 12) list.add(`ep${String(n + 1).padStart(2, "0")}.html`);
+        }
+        if (id === "dv01") list.add("ep04.html");
+      }
+      if (page === "home") {
+        list.add("ep12.html");
+        list.add("ep01.html");
+      }
+      list.forEach((u) => prefetchUrl(u));
+      // 预取列表页样式已在缓存；再预取几集封面
+      $$('a[href^="ep"], a[href^="dv"]').slice(0, 6).forEach((a) => {
+        const href = a.getAttribute("href");
+        if (href && href.includes(".html")) prefetchUrl(href);
+      });
+    };
+    if ("requestIdleCallback" in window) requestIdleCallback(run, { timeout: 1500 });
+    else setTimeout(run, 400);
   }
 
   function audioUrl(site, ep) {
@@ -374,6 +459,7 @@
     }
     // 所有页面兜底：绑定播放按钮
     bindPlayButtons(document);
+    prefetchKeyPages();
   }
 
   document.addEventListener("DOMContentLoaded", boot);
